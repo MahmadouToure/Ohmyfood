@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahmadouToure/Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahmadouToure/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/MahmadouToure/Ohmyfood#readme"
+}
