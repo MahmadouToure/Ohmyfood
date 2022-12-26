@@ -1,0 +1,26 @@
+@use "../utils/variables.scss";
+@use "../utils/mixin.scss";
+
+
+.explorer {
+    text-align: center;
+    margin-top: 2rem;
+      & p {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      & button {
+        padding: 1rem;
+        background-image: linear-gradient(variables.$secondarycolor, variables.$primarycolor );
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        border-radius: 40px;
+        @include mixin.base-shadow;
+        transition: all 300ms;
+        &:hover {
+            opacity: 0.8;
+            transform:scale(1.05) ;
+        }
+      }
+  }

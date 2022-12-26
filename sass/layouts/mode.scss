@@ -1,0 +1,60 @@
+@use "../utils/mixin.scss"; 
+@use "../utils/variables.scss";
+
+.mode {
+    padding: 2rem;
+    margin-top: 2rem;
+
+& ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    counter-reset: num;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+}
+}
+& li {
+    &::before {
+        counter-increment: num;
+        content: " " counter(num);
+        color: #fff;
+        background-color: variables.$primarycolor;
+        padding: .2rem;
+        display: grid;
+        place-items: center;
+        width: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 1rem;
+        left: -0.7rem;
+    }
+    background-color: #f6f6f6;
+    padding: 1.3rem 2rem;
+    font-weight: bold;
+    font-size: small;
+    list-style-type: none;
+    flex-grow: 1;
+    border-radius: 1rem;
+    position: relative;
+    @include mixin.base-shadow; 
+    &:hover{
+        transform: scale(1.02);
+        background-color: hsl(256, 60%, 95%);
+        
+    }
+    & i.fas {
+        margin-right: 1rem;
+        color: gray;
+        
+        &:hover {
+            color: variables.$primarycolor;
+            
+
+        }
+    }
+    
+}
+}

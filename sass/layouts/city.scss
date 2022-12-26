@@ -1,0 +1,11 @@
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    color: rgb(53, 53, 53);
+        & h3 {
+            padding-left: 1rem;
+        }
+}
