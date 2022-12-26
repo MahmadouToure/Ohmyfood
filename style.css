@@ -8,7 +8,7 @@
 header {
   text-align: center;
   padding: 2rem;
-  box-shadow: 0 0 0.7rem rgb(175, 173, 173);
+  box-shadow: 0 0 0.7rem #cbcaca;
   position: relative;
 }
 
@@ -22,6 +22,29 @@ header {
 }
 .city h2 {
   padding-left: 1rem;
+}
+
+.explorer {
+  text-align: center;
+  margin-top: 2rem;
+}
+.explorer p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.explorer button {
+  padding: 1rem;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 5px 0.9rem #f3f3f3;
+  transition: all 300ms;
+}
+.explorer button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */
