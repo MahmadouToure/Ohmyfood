@@ -1,0 +1,16 @@
+footer {
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+    padding: 2rem;
+    line-height: 2rem;
+    & h3 {
+        font-family: "Shrikhand", sans-serif;
+        margin-bottom: 1rem;
+    }
+    & .fa-utensils {
+        margin-right: .5rem;
+    }
+    & .fa-hands-helping {
+        margin-right: .2rem;
+    }
+}

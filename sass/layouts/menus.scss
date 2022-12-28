@@ -9,6 +9,7 @@
         display: grid;
         gap: 2rem;
         margin-top: 2rem;
+        margin-bottom: 3rem;
         
     }
 }
@@ -63,9 +64,23 @@
         margin-bottom: .5rem;
     }
     & .fa-heart {
-        font-size: 2rem;
         position: absolute;
-        right: 1rem;
-        top: 0.5rem;
+        top: .5rem;
+        right: .9rem;
+        font-size: 2rem;
     }
+    & .far:hover {
+        opacity: 0;
+    }
+    & .fas {
+        opacity: 0;
+        background: -webkit-linear-gradient(bottom, variables.$secondarycolor, variables.$primarycolor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: opacity 300ms;
+    }
+    & .fas:hover {
+        opacity: 1;
+    }
+
 }
