@@ -86,6 +86,16 @@ header {
         justify-content: space-between;
         overflow: hidden;
         @include mixin.base-shadow;
+        &:nth-child(2), &:nth-child(3), &:nth-child(4)  {
+            animation: animitem 1s 300ms both;
+            
+        }
+        &:nth-child(6), &:nth-child(7),  &:nth-child(8){
+            animation: animitem 1s 600ms both;
+        }
+        &:nth-child(10), &:nth-child(11),  &:nth-child(12){
+            animation: animitem 1s 900ms both;
+        }
         &:hover .check {
             margin: 0;
             & i {
@@ -97,6 +107,7 @@ header {
             padding: 1rem;
             white-space: nowrap;
             overflow: hidden;
+            
             
             & h4, p {
                 text-overflow: ellipsis;
@@ -143,5 +154,14 @@ header {
             }
         }
     }
-    
+    @keyframes animitem {
+        0% {
+            transform: translatey(30%);
+            opacity: 0;
+        }
+        100% {
+            transform: translatey(0);
+            opacity: 1;
+        }
+    }
     

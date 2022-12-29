@@ -293,6 +293,15 @@ header a {
   overflow: hidden;
   box-shadow: 0 5px 0.9rem #c7c4c4;
 }
+.list-wrapper .list-div:nth-child(2), .list-wrapper .list-div:nth-child(3), .list-wrapper .list-div:nth-child(4) {
+  animation: animitem 1s 300ms both;
+}
+.list-wrapper .list-div:nth-child(6), .list-wrapper .list-div:nth-child(7), .list-wrapper .list-div:nth-child(8) {
+  animation: animitem 1s 600ms both;
+}
+.list-wrapper .list-div:nth-child(10), .list-wrapper .list-div:nth-child(11), .list-wrapper .list-div:nth-child(12) {
+  animation: animitem 1s 900ms both;
+}
 .list-wrapper .list-div:hover .check {
   margin: 0;
 }
@@ -353,6 +362,53 @@ header a {
 .list-wrapper .div-btn .command:hover {
   opacity: 0.8;
   transform: scale(1.05);
+}
+
+@keyframes animitem {
+  0% {
+    transform: translatey(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  animation: loader 300ms 2s both;
+  transform-origin: bottom;
+  display: grid;
+  place-items: center;
+}
+.loader::after {
+  content: " ";
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #FF79DA;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes loader {
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

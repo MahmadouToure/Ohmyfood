@@ -1,0 +1,36 @@
+@use "../utils/variables.scss";
+
+.loader {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    opacity: 0.9;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    animation: loader 300ms 2s both;transform-origin: bottom;
+    display: grid;
+    place-items: center;
+    &::after {
+        content: " ";
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        border-top: 5px solid variables.$primarycolor;
+        border-bottom: 5px solid variables.$secondarycolor;
+        animation: rotate 1s linear infinite ;
+    }
+}
+@keyframes loader {
+    100% {
+        transform: scale(0); 
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+   100%{
+    transform: rotate(360deg);
+   } 
+}
